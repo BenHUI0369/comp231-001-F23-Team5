@@ -1,0 +1,32 @@
+POST http://localhost:5115/patientrecords
+Content-Type: application/json
+
+{
+    "firstName": "Peter",
+    "lastName": "Chan",
+    "dateOfBirth": "1980-05-15",
+    "gender": "Male",
+    "contactInformation": 
+    {
+      "email": "peterchan@gmail.com",
+      "phone": "111-1111-1111",
+      "address": 
+      {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "postalCode": "A1A1A1"
+      }
+    },
+    "medicalHistory":
+    [
+        {
+        "Allergies": "Penicillin",
+        "Conditions": "Hypertension",
+        "Medications": "Aspirin"
+        }
+    ]
+}
+
+###
+GET  https://localhost:7146/patientrecords/3a005ee1-7976-4641-95e0-08fa8ada868e

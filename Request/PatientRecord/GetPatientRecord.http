@@ -1,0 +1,4 @@
+@id=9252a62e-5fe1-4ee7-bd60-77c97a4a6ae4
+
+GET http://localhost:5115/patientrecords/{{id}}
+
